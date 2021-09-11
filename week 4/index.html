@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekly tasks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <div id="hoverTest">
+    <span v-bind:title="message">
+      Hover over text for a message
+    </span>
+  </div>
+  <div id="scores">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+    
+</body>
+    
+<script src="create.js"></script>
+</html>

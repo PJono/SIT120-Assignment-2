@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekly tasks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script> 
+    var scores = ["80","50","25","60"]
+    var Age = 2021-parseInt(prompt("Enter your age"));
+    var Name = prompt("Enter your name", "");
+    var dateTime = new Date();
+    </script>
+    
+    </head>
+    
+    <body>
+      <p><div  id="testing"></div>
+      </p>
+      <p><div  id="testing age"></div>
+      </p>
+      <p><div  id="testing array"></div>
+      </p>
+      <p><div  id="testing time"></div>
+      </p>
+      <script>
+        document.getElementById("testing").innerHTML = "Your name " + Name +" has the length of " + Name.length;
+        document.getElementById("testing age").innerHTML = "You were born in " + Age;
+        document.getElementById("testing array").innerHTML = "All scores are " + scores.join(', ');
+        document.getElementById("testing time").innerHTML = "The year is " + dateTime.getFullYear() + " and the month is " + dateTime.getMonth();
+      </script>
+    
+    </body>
+    
+<script src="create.js"></script>
+</html>

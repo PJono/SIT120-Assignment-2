@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <img src="banner.jpg" alt="banner" style="width:100%;height:100%;">
+<html>
+    <head>
+        <body>
+            <link rel="stylesheet" type="text/css" href="./navbar.css" />
+            <div class="navbar">
+              <a href="index.html" >Home</a>
+              <a href="browse.html">Browse</a>
+              <a href="create.html">Create</a>
+            </div>
+            <div id="Title">
+              <h1>{{ message }}</h1>
+              <input v-model="message">
+            </div>
+            <h1>
+              Compare prices for searched items
+            </h1>
+            
+            <input id="name"/>
+            <a id="ingredent" href="https://www.woolworths.com.au/shop/search/products">woolworths
+              </a>
+            <p>
+            <input id="Cname"/>
+            <a id="Cingredent" href="https://shop.coles.com.au/a/national/everything/search/">coles
+              </a>
+            <p>
+              <div id="Select-Price">
+                <select v-model="selected">
+                  <option v-for="option in options" v-bind:value="option.value">
+                    {{ option.text }}
+                  </option>
+                </select>
+                <span>Selected: {{ selected }}</span>
+              </div>
+              <div id="vm"></div>
+          </body>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script src="create.js"> </script>
+    </head>
+</html>

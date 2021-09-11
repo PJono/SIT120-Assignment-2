@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <img src="banner.jpg" alt="banner" style="width:100%;height:100%;">
+<html>
+    <head>
+        <body>
+            <link rel="stylesheet" type="text/css" href="./navbar.css" />
+            <div class="navbar">
+              <a href="index.html" >Home</a>
+              <a href="browse.html">Browse</a>
+              <a href="create.html">Create</a>
+            </div>
+        </body>
+        
+        <div id="Prices">
+            <input type="checkbox" id="Cheap" value="Cheap" v-model="Prices" />
+            <label for="Cheap">Cheap</label>
+            <input type="checkbox" id="Moderate" value="Moderate" v-model="Prices" />
+            <label for="Moderate">Moderate</label>
+            <input type="checkbox" id="Expensive" value="Expensive" v-model="Prices" />
+            <label for="Expensive">Expensive</label>
+            <br />
+            <span>Filters: {{ Prices }}</span>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+          <script src="create.js"> </script>
+    </head>
+    
+</html>
